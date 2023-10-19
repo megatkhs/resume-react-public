@@ -1,0 +1,25 @@
+@import url("destyle.css");
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Inter:wght@400;700&display=swap");
+
+:root {
+  --spacing-xs: 5pt;
+  --spacing-sm: 10pt;
+  --spacing: 20pt;
+  --spacing-md: 30pt;
+  --spacing-lg: 40pt;
+}
+
+html {
+  font-family: Inter, "BIZ UDPGothic", sans-serif;
+  font-size: 10pt;
+  line-height: 1.8;
+}
+
+body {
+  font-size: 1.1rem;
+}
+
+@page {
+  size: a4; /* A4縦 */
+  margin: 1cm; /* 余白 */
+}

@@ -1,0 +1,1 @@
+export { TermLabel } from "./TermLabel";

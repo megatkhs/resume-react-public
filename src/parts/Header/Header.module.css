@@ -1,0 +1,28 @@
+.module {
+  display: grid;
+  gap: var(--spacing-sm);
+}
+
+.title {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.name {
+  display: flex;
+
+  > dt {
+    font-weight: normal;
+
+    &::after {
+      content: "：";
+    }
+  }
+}

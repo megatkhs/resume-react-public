@@ -1,0 +1,17 @@
+.module {
+  display: grid;
+  padding-block: 0.2em;
+  line-height: 1.2;
+  gap: 0.3em;
+}
+
+.item {
+  position: relative;
+  padding-left: 1em;
+
+  &::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+  }
+}

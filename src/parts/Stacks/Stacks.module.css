@@ -1,0 +1,32 @@
+.module {
+  table-layout: fixed;
+  border-top: 1pt solid #b7b7b7;
+  border-left: 1pt solid #b7b7b7;
+  break-inside: avoid;
+  line-height: 1.2;
+
+  th,
+  td {
+    padding: 0.5em;
+    border-right: 1pt solid #b7b7b7;
+    border-bottom: 1pt solid #b7b7b7;
+    vertical-align: middle;
+    white-space: pre-line;
+
+    &.fixed {
+      width: 110pt;
+    }
+  }
+
+  th {
+    background: #f3f3f3;
+  }
+}
+
+.category {
+  width: 8em;
+}
+
+.term {
+  width: 6em;
+}

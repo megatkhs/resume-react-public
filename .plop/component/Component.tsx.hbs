@@ -1,0 +1,12 @@
+import clsx from "clsx";
+import styles from "./{{name}}.module.css";
+
+export type {{name}}Props = {
+  className?: string;
+};
+
+export const {{name}} = (props: {{name}}Props) => {
+  const { className } = props;
+
+  return <div className={clsx(styles.module, className)}></div>;
+}

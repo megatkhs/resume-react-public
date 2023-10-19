@@ -1,0 +1,18 @@
+.module {
+  p {
+    &:not(:first-child) {
+      padding-top: 0.5em;
+    }
+  }
+
+  li {
+    position: relative;
+    padding-left: 1em;
+
+    &::before {
+      content: "・";
+      position: absolute;
+      left: 0;
+    }
+  }
+}

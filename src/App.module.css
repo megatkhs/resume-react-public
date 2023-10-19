@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.body {
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+
+    &:not(:last-child) {
+      padding-bottom: 1.5em;
+    }
+  }
+
+  h2 {
+    font-weight: bold;
+    break-before: avoid;
+
+    &::before {
+      content: "■";
+      margin-right: 0.5em;
+    }
+  }
+
+  a {
+    color: #068fff;
+    text-decoration: underline;
+  }
+}
+
+.promotions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+
+  .label {
+    text-decoration: underline;
+  }
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.promotion {
+  break-inside: avoid;
+}
+
+.finished {
+  text-align: right;
+}
+
+.break {
+  break-before: page;
+}
